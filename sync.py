@@ -6,21 +6,10 @@ import rclone
 
 cfg_path = "./rclone.conf"
 from_drives = [
-    "test",
-    "___backups",
-    "__code",
-    "__meow",
-    "__quack",
-    "dumpyard",
-    "pss",
-    "public",
+    "dummygd",
 ]
 to_drives = [
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
+    "dummymega",
 ]
 
 cfg = open(cfg_path).read()
@@ -28,7 +17,7 @@ rc = rclone.with_config(cfg)
 
 logging.basicConfig(level=logging.DEBUG, format="%(asctime)s %(name)s [%(levelname)s]: %(message)s")
 
-flags = ["--drive-server-side-across-configs"]
+flags = ["-vP"]
 if os.path.isdir("accounts"):
     sa_files = glob.glob("accounts/*.json")
     assert len(sa_files)
