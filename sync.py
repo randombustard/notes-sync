@@ -27,7 +27,7 @@ if os.path.isdir("accounts"):
 to_drive = to_drives[0]
 for from_drive in from_drives:
     print(f"From: {from_drive}:")
-    print(f"To: {to_drive}:sync/{from_drive}")
+    print(f"To: {to_drive}:sync")
     result = rc.sync(
         f"{from_drive}:",
         f"{to_drive}:sync/{from_drive}",
