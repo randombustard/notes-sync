@@ -2,10 +2,10 @@ name: RClone Sync
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '30 6 * * *'
+    - cron:  '45 18 * * *'
 jobs:
   run-sync-service:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu:22.04
     steps:
       - name: Install RClone
         run: |
