@@ -30,7 +30,7 @@ for from_drive in from_drives:
     print(f"To: {to_drive}:sync")
     result = rc.sync(
         f"{from_drive}:",
-        f"{to_drive}:sync/{from_drive}",
+        f"{to_drive}:sync",
         flags,
     )
     if "error" in result["error"].decode("utf-8").lower():
