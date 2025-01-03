@@ -5,7 +5,7 @@ on:
     - cron:  '0 0 * * *'
 jobs:
   run-sync-service:
-    runs-on: ubuntu:22.04
+    runs-on: ubuntu:latest
     steps:
       - name: Install RClone
         run: |
