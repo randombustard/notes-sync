@@ -11,7 +11,7 @@ jobs:
         run: |
           wget https://github.com/dogbutcat/gclone/releases/download/v1.73.3-mod1.6.2/gclone-v1.73.3-mod1.6.2-linux-amd64.zip
           unzip gclone-v1.73.3-mod1.6.2-linux-amd64.zip
-          chmod +x gclone-v1.73.3-mod1.6.2-linux-amd64.zip/gclone
+          chmod +x gclone-v1.73.3-mod1.6.2-linux-amd64/gclone
           sudo mv gclone-v1.73.3-mod1.6.2-linux-amd64/gclone /usr/bin/rclone
           rclone help
 
