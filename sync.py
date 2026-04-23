@@ -9,7 +9,7 @@ from_drives = [
     "dummygd",
 ]
 to_drives = [
-    "box",
+    "pcloud",
 ]
 
 cfg = open(cfg_path).read()
